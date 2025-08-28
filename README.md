@@ -62,6 +62,3 @@ Open a Pull Request
 
 ## 📜 License
 Distributed under the MIT License. See [LICENSE](LICENSE) for more information.
-
-🙏 Acknowledgements
-List any tutorials, articles, or libraries that helped you in the development of this project.
