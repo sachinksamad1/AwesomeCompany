@@ -1,0 +1,81 @@
+<!-- FAQ Section -->
+<section id="faq" class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center text-gray-900">Frequently Asked Questions</h2>
+        <div class="mt-8 max-w-2xl mx-auto">
+            <!-- FAQ 1 -->
+            <div class="accordion-item p-4">
+                <button (click)="toggleAccordion(0)"
+                    class="accordion-button flex justify-between items-center w-full text-left text-lg font-semibold text-gray-800 focus:outline-none">
+                    <span>How do I get started?</span>
+                    <svg class="w-5 h-5 ml-2 transition-transform duration-300"
+                        [ngClass]="{'rotate-180': openAccordionIndex() === 0}" fill="none" stroke="currentColor"
+                        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </button>
+                @if (openAccordionIndex() === 0) {
+                <div class="mt-2 text-gray-600">
+                    <p>You can get started by signing up for a free trial. Once you're signed up, you can choose a
+                        template
+                        and begin customizing it with your content. It's that simple!</p>
+                </div>
+                }
+            </div>
+            <!-- FAQ 2 -->
+            <div class="accordion-item p-4">
+                <button (click)="toggleAccordion(1)"
+                    class="accordion-button flex justify-between items-center w-full text-left text-lg font-semibold text-gray-800 focus:outline-none">
+                    <span>Is a free trial available?</span>
+                    <svg class="w-5 h-5 ml-2 transition-transform duration-300"
+                        [ngClass]="{'rotate-180': openAccordionIndex() === 1}" fill="none" stroke="currentColor"
+                        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </button>
+                @if (openAccordionIndex() === 1) {
+                <div class="mt-2 text-gray-600">
+                    <p>Yes, we offer a 14-day free trial with no credit card required. You'll have full access to all
+                        features
+                        during this time.</p>
+                </div>
+                }
+            </div>
+            <!-- FAQ 3 -->
+            <div class="accordion-item p-4">
+                <button (click)="toggleAccordion(2)"
+                    class="accordion-button flex justify-between items-center w-full text-left text-lg font-semibold text-gray-800 focus:outline-none">
+                    <span>Can I upgrade or downgrade my plan?</span>
+                    <svg class="w-5 h-5 ml-2 transition-transform duration-300"
+                        [ngClass]="{'rotate-180': openAccordionIndex() === 2}" fill="none" stroke="currentColor"
+                        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </button>
+                @if (openAccordionIndex() === 2) {
+                <div class="mt-2 text-gray-600">
+                    <p>Absolutely. You can change your plan at any time from your account dashboard. The change will be
+                        effective immediately.</p>
+                </div>
+                }
+            </div>
+            <!-- FAQ 4 -->
+            <div class="accordion-item p-4">
+                <button (click)="toggleAccordion(3)"
+                    class="accordion-button flex justify-between items-center w-full text-left text-lg font-semibold text-gray-800 focus:outline-none">
+                    <span>What payment methods do you accept?</span>
+                    <svg class="w-5 h-5 ml-2 transition-transform duration-300"
+                        [ngClass]="{'rotate-180': openAccordionIndex() === 3}" fill="none" stroke="currentColor"
+                        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </button>
+                @if (openAccordionIndex() === 3) {
+                <div class="mt-2 text-gray-600">
+                    <p>We accept all major credit cards, as well as PayPal and Apple Pay for your convenience.</p>
+                </div>
+                }
+            </div>
+        </div>
+    </div>
+</section>

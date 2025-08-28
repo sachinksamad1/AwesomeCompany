@@ -1,0 +1,17 @@
+<section id="features" class="py-16 md:py-24 bg-white">
+  <div class="container mx-auto px-4 flex flex-col-reverse md:flex-row items-center gap-8 md:gap-16">
+    <div class="md:w-1/2">
+      <img src="https://placehold.co/600x500/16B2B2/FFFFFF?text=Website+Features" alt="Website Features"
+        class="rounded-xl shadow-lg w-full">
+    </div>
+    <div class="md:w-1/2">
+      <h2 class="text-3xl font-bold text-gray-900">Our Amazing Features</h2>
+      <p class="mt-4 text-gray-600">
+        We provide a wide range of tools and integrations to power your business online.
+      </p>
+      <ul class="mt-6 space-y-4">
+        <app-features-items *ngFor="let item of features" [feature]="item"></app-features-items>
+      </ul>
+    </div>
+  </div>
+</section>
